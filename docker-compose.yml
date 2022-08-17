@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  devenv:
+    build: ./
+    image: devenv
+    stdin_open: true
+    tty: true
+    working_dir: /work
+    restart: always
+    volumes:
+      - ./work:/work
